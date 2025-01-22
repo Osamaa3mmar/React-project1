@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px; 
+  
+  }
+  :root{
+    --primary:#A259FF;
+    --background:#2b2b2b;
+    --background2:#3b3b3b;
+    --lg-radius:8px ;
+    --md-radius: 6px ;
+    --sm-radius: 4px ; 
+  }
+  .cats{
+    margin-top: 30px ;
+  }
+.catCard{
+    background-color: var(--background);
+    padding: 15px ;
+    margin: 10px; 
+    font-size: 16px ;
+    font-weight: 600;
+    text-transform: uppercase;
+    min-height:100px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--lg-radius);
+    transition: 400ms;
+    color: white;
+    text-decoration: none !important;
+    box-shadow: 0px 0px 5px rgba(162, 89, 255,0.4);
+}
+.catCard:hover{
+outline: rgba(161, 89, 255, 0.4) 6px solid;
+transition: 400ms;
+transform: rotate(5deg);
+letter-spacing: 1.5px;
+color: #A259FF;
+text-shadow: 0px 0px 40px var(--primary);
+scale: 1.08;
+}
+.link{
+    color: white;
+}

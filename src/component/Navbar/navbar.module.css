@@ -1,0 +1,67 @@
+*{
+    padding: 0px;
+    margin: 0px; 
+  
+  }
+  :root{
+    --primary:#A259FF;
+    --background:#2b2b2b;
+    --background2:#3b3b3b;
+    --lg-radius:8px ;
+    --md-radius: 6px ;
+    --sm-radius: 4px ; 
+  }
+
+.navbar{
+background-color: var(--background);
+border-radius: 60px ;
+position: sticky;
+top: 6px;
+left: 0;
+padding: 20px !important ;
+outline: 5px #a159ff3d solid;
+}
+.logo{
+color: var(--primary) !important;
+  font-size: 26px !important;
+  font-weight: 700;
+}
+
+
+.navLink{
+color: var(--primary) !important;
+font-size: 20px !important;
+margin: 0px 5px ;
+border-radius: var(--lg-radius);
+transition: 500ms !important;
+padding: 6px 15px !important;
+
+}
+.navLink:hover{
+background-color: #a159ff32;
+}
+
+.navLinkAdd{
+    background-color: var(--primary) !important;
+    padding: 6px 20px !important;
+    align-self: center;
+    font-size: 20px !important;
+    border-radius: var(--lg-radius);
+    margin: 0px 5px ;
+
+}
+
+.navLinkActive{
+    background-color: var(--primary) !important;
+    padding: 6px 15px !important;
+    align-self: center;
+    font-size: 20px !important;
+    border-radius: var(--lg-radius);
+    margin: 0px 10px ;
+    color: white !important;
+    transition: 500ms !important;
+
+}
+.navLinkActive:hover{
+    background-color: #a159ff91 !important;
+}
