@@ -4,10 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import { Link } from 'react-router-dom';
 import style from '../Categories/Categories.module.css'
+import LoadingCategories from '../Loadings/LoadingCategories';
 export default function Category() {
     const {data,loading,error}=useFitch(import.meta.env.VITE_BURL+'/products/categories');
     if(loading){
-        return <div>Loading</div>;
+        return <LoadingCategories count={8}/>;
     }
     console.log(data)
   return (

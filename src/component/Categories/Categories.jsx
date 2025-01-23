@@ -2,10 +2,11 @@ import React from 'react'
 import useFitch from '../../Hooks/useFitch/useFitch';
 import style from './Categories.module.css';
 import { Link } from 'react-router-dom';
+import LoadingCategories from '../Loadings/LoadingCategories';
 export default function Categories() {
     const {data,loading,error}=useFitch(import.meta.env.VITE_BURL+'/products/categories');
     if(loading){
-        return <div>Loading</div>;
+        return <LoadingCategories count={30}/>;
     }
     console.log(data)
   return (

@@ -1,0 +1,18 @@
+
+.palceholder{
+    animation-name:identifier ;
+    animation-duration: 500ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes identifier {
+    0%{
+        opacity: 0.5;
+        scale: 1;
+    }
+    100%{
+        opacity: 0.2;
+        scale: 1.1;
+    }
+}

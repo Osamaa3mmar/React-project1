@@ -8,6 +8,9 @@ import style from './app.module.css'
 import Categories from './component/Categories/Categories'
 import Products from './component/Products/Products'
 import CurrentCategory from './component/Categories/CurrentCategory'
+import CurrentProduct from './component/Products/CurrentProduct'
+import Quotes from './component/Quotes/Quotes'
+import Add from './component/Add/Add'
 export default function App() {
   return (
     <div className={"pt-4 "+style.body}>
@@ -18,7 +21,9 @@ export default function App() {
         <Route path='/Categories/:slug' element={<CurrentCategory/>}></Route>
         <Route path='/Categories' element={<Categories/>}></Route>
         <Route path='/Products' element={<Products/>}></Route>
-
+        <Route path='/Products/:id' element={<CurrentProduct/>}></Route>
+        <Route path='/Quotes' element={<Quotes/>}></Route>
+        <Route path='/Add' element={<Add/>}></Route>
       </Routes>
 
 

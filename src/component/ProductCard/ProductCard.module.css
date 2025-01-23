@@ -52,7 +52,7 @@
     margin: 0px 5px ;
     padding: 4px;
     text-wrap: wrap;
-    
+    width: fit-content;
     font-size: 10px; 
     border-radius: var(--lg-radius);
     border: 2px solid var(--primary);

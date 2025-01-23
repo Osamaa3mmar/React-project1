@@ -30,7 +30,7 @@ export default function Navbar() {
           <Link className={'nav-link '+ (page==4?style.navLinkActive:style.navLink)} onClick={()=>changePage(4)} aria-disabled="true" to={'/Quotes'}>Quotes</Link>
         </li>
         <li className="nav-item">
-          <Link className={'nav-link '+ style.navLinkAdd} aria-disabled="true" to={'/Quotes'}>Add Product</Link>
+          <Link className={'nav-link '+ style.navLinkAdd} aria-disabled="true" to={'/Add'}>Add Product</Link>
         </li>
       </ul>
     </div>
